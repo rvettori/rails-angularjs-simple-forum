@@ -1,0 +1,2174 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"foru",
+				"forums"
+			],
+			[
+				"new",
+				"new_forum_path"
+			],
+			[
+				"forums",
+				"forums_path"
+			],
+			[
+				"campo",
+				"campo_livre"
+			],
+			[
+				"cancel",
+				"cancelaTimeoutCotacao"
+			],
+			[
+				"botao",
+				"botao_enviar"
+			],
+			[
+				"dias",
+				"dias_licenca_extra"
+			],
+			[
+				"id",
+				"id_interno"
+			],
+			[
+				"Sel",
+				"SELController"
+			],
+			[
+				"dow",
+				"download"
+			],
+			[
+				"ex",
+				"extrair_codigo_impressao"
+			],
+			[
+				"cod",
+				"cod_cotacao"
+			],
+			[
+				"sele",
+				"selenium_element"
+			],
+			[
+				"edit",
+				"EDITCPF"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"timeout",
+				"timeoutCotacao"
+			],
+			[
+				"timeou",
+				"timeoutCotacao"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"up",
+				"upcase"
+			],
+			[
+				"G",
+				"GASOLINA"
+			],
+			[
+				"valor",
+				"valor_kit_gas"
+			],
+			[
+				"ALO",
+				"ALCOOL_GNV"
+			],
+			[
+				"ALCO",
+				"ALCOOL_GNV"
+			],
+			[
+				"GASOL",
+				"GASOLINA_GNV"
+			],
+			[
+				"FLEX",
+				"FLEX_GNV"
+			],
+			[
+				"dados",
+				"dados_veiculo"
+			],
+			[
+				"to",
+				"tokio"
+			],
+			[
+				"Factory",
+				"FactoryGirl"
+			],
+			[
+				"novo",
+				"novo_preco"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"S",
+				"STATUS_ERRO"
+			],
+			[
+				"OK",
+				"STATUS_OK"
+			],
+			[
+				"st",
+				"STATUS_ERRO_LOGIN"
+			],
+			[
+				"status",
+				"STATUS_ERRO_SISTEMA"
+			],
+			[
+				"STATUS",
+				"STATUS_ERRO_LOGIN"
+			],
+			[
+				"tokio",
+				"tokiomarine"
+			],
+			[
+				"pre",
+				"precos"
+			],
+			[
+				"preco",
+				"preco_mapfre"
+			],
+			[
+				"STAT",
+				"STATUS_ERRO_SISTEMA"
+			],
+			[
+				"STA",
+				"STATUS_ERRO_LOGIN"
+			],
+			[
+				"hash",
+				"hash_seguradora"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"monta",
+				"monta_retorno"
+			],
+			[
+				"TEMPO",
+				"tempo"
+			],
+			[
+				"des",
+				"des	describe (String)"
+			],
+			[
+				"cl",
+				"cla	class .. initialize .. end"
+			],
+			[
+				"campo_gara",
+				"campo_garagem_estudo"
+			],
+			[
+				"gara",
+				"garagem_residencia"
+			],
+			[
+				"extrair_p",
+				"extrair_pdf_azul"
+			],
+			[
+				"cober",
+				"cobertura"
+			],
+			[
+				"cobertu",
+				"coberturas  (variable)"
+			],
+			[
+				"co",
+				"cobertura"
+			],
+			[
+				"ca",
+				"caminho"
+			],
+			[
+				"tmp",
+				"tmp_txt"
+			],
+			[
+				"tm",
+				"tmp_txt"
+			],
+			[
+				"SEGURADORA",
+				"SEGURADORA_INATIVA"
+			],
+			[
+				"DEFA",
+				"DEFAULT_ASSISTANCE24H"
+			],
+			[
+				"condu",
+				"condutor_principal"
+			],
+			[
+				"ret",
+				"retorno"
+			],
+			[
+				"codigo",
+				"codigo_cotacao"
+			],
+			[
+				"sor",
+				"sorb	sort_by { |e| .. }"
+			],
+			[
+				"vlr",
+				"vlr_seguro"
+			],
+			[
+				"cota",
+				"cotacoes_item"
+			],
+			[
+				"cotacoes",
+				"cotacoes_item"
+			],
+			[
+				"sub",
+				"SUBTITLE_STYLE"
+			],
+			[
+				"ini",
+				"inicio_vigencia"
+			],
+			[
+				"termi",
+				"termino_vigencia"
+			],
+			[
+				"r",
+				"rt	render (text)"
+			],
+			[
+				"fla",
+				"flash	flash[…]"
+			],
+			[
+				"proposta",
+				"proposta_titulo"
+			],
+			[
+				"Fi",
+				"File	File.open(\"..\") { |file| .. }"
+			],
+			[
+				"adju",
+				"adjust_value_fipe_with_fixed_values"
+			],
+			[
+				"nil",
+				"nil?  (function)"
+			],
+			[
+				"stage",
+				"stage_results"
+			],
+			[
+				"insura",
+				"insurance_quote"
+			],
+			[
+				"answ",
+				"answer_value"
+			],
+			[
+				"an",
+				"answer_value"
+			],
+			[
+				"ans",
+				"answer"
+			],
+			[
+				"answer",
+				"answer"
+			],
+			[
+				"answe",
+				"answer"
+			],
+			[
+				"question",
+				"question_6"
+			],
+			[
+				"he",
+				"higher_value"
+			],
+			[
+				"model",
+				"model_year"
+			],
+			[
+				"MINIMU",
+				"MINIMUM_AMOUNT_QUOTATION"
+			],
+			[
+				"n",
+				"numericality"
+			],
+			[
+				"au",
+				"autocomplete_field"
+			],
+			[
+				"map",
+				"mapfre"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"insurer",
+				"insurer_name"
+			],
+			[
+				"eac",
+				"each"
+			],
+			[
+				"insur",
+				"insurer_name"
+			],
+			[
+				"ajaxS",
+				"ajaxSuccess  (function)"
+			],
+			[
+				"gene",
+				"genericAutocompletePath"
+			],
+			[
+				"anw",
+				"answer_id"
+			],
+			[
+				"mi",
+				"middle  (value)"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"has",
+				"has_one  (function)"
+			],
+			[
+				"Que",
+				"question_1"
+			],
+			[
+				"q",
+				"question_1"
+			],
+			[
+				"should",
+				"should_receive"
+			],
+			[
+				"quest",
+				"question_5"
+			],
+			[
+				"ques",
+				"question_5"
+			],
+			[
+				"valid",
+				"valid_answers"
+			],
+			[
+				"stage_result",
+				"stage_result_5"
+			],
+			[
+				"requi",
+				"required"
+			],
+			[
+				"as",
+				"assign_answers"
+			],
+			[
+				"ass",
+				"assign_answers"
+			],
+			[
+				"append",
+				"append_answers"
+			],
+			[
+				"load",
+				"load_current_stages"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 506,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/angular/controllers/forum-controller.js",
+			"settings":
+			{
+				"buffer_size": 1312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/angular/app.js.erb",
+			"settings":
+			{
+				"buffer_size": 2977,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/jsroutes.rb",
+			"settings":
+			{
+				"buffer_size": 81,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 446,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 152.0,
+		"selected_items":
+		[
+			[
+				"gemb",
+				"Gem Browser: List Gems"
+			],
+			[
+				"FORMA",
+				"Format: Javascript"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"format",
+				"Format: Ruby"
+			],
+			[
+				"setsynta ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"setsyntax rails",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"for",
+				"Format: Ruby"
+			],
+			[
+				"gem",
+				"Toggle Comment"
+			],
+			[
+				"form",
+				"Format: Ruby"
+			],
+			[
+				"reiden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"url",
+				"StringEncode: URL Decode"
+			],
+			[
+				"denti",
+				"StringEncode: HTML Deentitize"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"GEM",
+				"Gem Browser: List Gems"
+			],
+			[
+				"decod",
+				"StringEncode: URL Decode"
+			],
+			[
+				"setsyntax ruby",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"url de",
+				"StringEncode: URL Decode"
+			],
+			[
+				"dentiti",
+				"StringEncode: HTML Deentitize"
+			],
+			[
+				"deco",
+				"StringEncode: URL Decode"
+			],
+			[
+				"dent",
+				"StringEncode: HTML Deentitize"
+			],
+			[
+				"url dec",
+				"StringEncode: URL Decode"
+			],
+			[
+				"dentti",
+				"StringEncode: HTML Deentitize"
+			],
+			[
+				"ti",
+				"Tidy HTML"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gem fil",
+				"Git: Open Modified Files"
+			],
+			[
+				"instal pa",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: RSpec"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimer",
+				"Sublimerge: View Diff"
+			],
+			[
+				"removep",
+				"Package Control: Remove Package"
+			],
+			[
+				"iden",
+				"Indent XML"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set syntax xml",
+				"Set Syntax: XML"
+			],
+			[
+				"gembros",
+				"Gem Browser: List Gems"
+			],
+			[
+				"urlen",
+				"StringEncode: URL Encode"
+			],
+			[
+				"urle",
+				"StringEncode: URL Encode"
+			],
+			[
+				"urldec",
+				"StringEncode: URL Decode"
+			],
+			[
+				"urldecod",
+				"StringEncode: URL Decode"
+			],
+			[
+				"urlde",
+				"StringEncode: URL Decode"
+			],
+			[
+				"",
+				"BracketHighlighter: Jump to Left Bracket"
+			],
+			[
+				"entit",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"entitize",
+				"StringEncode: Safe HTML Entitize"
+			],
+			[
+				"entiti",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"reident",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reidet",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"REIDENT",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"gembor",
+				"Gem Browser: List Gems"
+			],
+			[
+				"sublimerge",
+				"Sublimerge: View Diff"
+			],
+			[
+				"sulimerge",
+				"Sublimerge: View Diff"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git",
+				"Git: Diff Staged"
+			],
+			[
+				"sublimere",
+				"Sublimerge: View Diff"
+			],
+			[
+				"sublime",
+				"Sublimerge: View Diff"
+			],
+			[
+				"gembrow",
+				"Gem Browser: List Gems"
+			],
+			[
+				"dif",
+				"FileDiffs: Menu"
+			],
+			[
+				"emove",
+				"File: Move"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"git ",
+				"Git: Toggle Annotations"
+			],
+			[
+				"REMOVE",
+				"Package Control: Remove Package"
+			],
+			[
+				"HTML",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"REID",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"git dif",
+				"Git: Diff Current File"
+			],
+			[
+				"gitk",
+				"Git: Gitk"
+			],
+			[
+				"foma",
+				"Format: Ruby"
+			],
+			[
+				"git di",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"pack insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/forums_controller.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/app.js.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/initializers/jsroutes.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/forum-controller.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/comment-controller.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/application.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.html.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.view.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/environments/development.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/services/forum_controller.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/initializers/mime_types.rb",
+		"/home/vettori/Projetos/rv/calcule_o_frete/app/views/layouts/application.html.erb",
+		"/home/vettori/Projetos/rv/calcule_o_frete/Gemfile",
+		"/home/vettori/Projetos/rv/calcule_o_frete/app/models/user.rb",
+		"/home/vettori/Projetos/rv/calcule_o_frete/config/environments/development.rb",
+		"/home/vettori/Projetos/rv/calcule_o_frete/app/assets/javascripts/application.js",
+		"/home/vettori/Projetos/rv/calcule_o_frete/app/views/welcome/index.html.rb",
+		"/home/vettori/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/vettori/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/vettori/Projetos/rv/calcule_o_frete/config/initializers/devise.rb",
+		"/home/vettori/Projetos/rv/calcule_o_frete/.gitignore",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/zurich.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/pagamento.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/pagamentos.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/renovar_licencas.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/db/schema.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/workers/forwarder.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/assets/javascripts/propostas.js.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_faye.html.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/RoboCotaSeguro.sublime-workspace",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/preco.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/workers/cotar.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/hdi.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/condutor.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/config/initializers/faye.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/porto.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/assets/stylesheets/application.css",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/assets/javascripts/application.js",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/models/pagamento_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/tokiomarine.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/models/tokiomarine_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/controllers/propostas_controller.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/modules/navigator.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/public/zurich.html",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_bradesco.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/workers/logar.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/lib/string_extensions.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/allianz.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_zurich.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/controllers/impressoes_controller.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/config/routes.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/calcular.js.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/bradesco.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/veiculo.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec_functional/impressao/impressao_bradesco_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/lib/print_hdi.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/pdfs/proposta_individual.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/Gemfile",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_hdi.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_mapfre.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/config/database.yml",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/login_seguradora.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/liberty.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_porto.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_liberty.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/usuario.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/models/usuario_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/controllers/application_controller.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec_functional/impressao/impressao_liberty_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/factories.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec_functional/impressao/impressao_porto_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/lib/zurich_selenium.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec_functional/impressao/impressao_mapfre_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/workers/printer.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/impressao_porto.rb ",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_resultados.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/assets/javascripts/cadastro.js",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_imprimir_click.html.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/imprimir_relatorio_individual.js.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/index.html.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/cotacoes.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/principal/index.html.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/layouts/principal.html.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/layouts/application.html.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/public/stylesheets/bradesco.css",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_veiculo.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/busca_veiculo_por_placa_ou_chassi.js.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/models/veiculo_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_cobertura.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/cobertura.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/cotacao.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/assets/javascripts/mascara.js",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/veiculo_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_condutor_secundario.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/db/migrate/20130828135442_add_valor_kit_gas_to_veiculo.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/log/Libertyleonir@leosoft.com.br.log",
+		"/home/vettori/.config/sublime-text-2/Packages/GitGutter/GitGutter.sublime-settings",
+		"/home/vettori/.config/sublime-text-2/Packages/User/GitGutter.sublime-settings",
+		"/home/vettori/Projetos/RoboCotaSeguro/.ruby-version",
+		"/home/vettori/Projetos/RoboCotaSeguro/.sublime-project",
+		"/home/vettori/Projetos/RoboCotaSeguro/RoboCotaSeguro.sublime-project",
+		"/home/vettori/Projetos/RoboCotaSeguro/banco.sql.bkp",
+		"/home/vettori/Projetos/RoboCotaSeguro/garagem_domicilio.html",
+		"/home/vettori/Projetos/RoboCotaSeguro/garagem_domicilio.html~",
+		"/home/vettori/Projetos/RoboCotaSeguro/hdi.html",
+		"/home/vettori/Projetos/RoboCotaSeguro/veiculo.png",
+		"/home/vettori/Projetos/RoboCotaSeguro/lib/mapfre_selenium.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/models/preco_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/db/structure.sql",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/mapfre.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/abrir_proposta_hdi.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/precos.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_cotacao.erb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/controllers/principal_controller.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/public/hdi.html",
+		"/home/vettori/Projetos/RoboCotaSeguro/test/preco_spec.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/spec/models/impressao_hdi_spec.rb",
+		"/home/vettori/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/modules/quotation_utils.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/workers/zurich_worker.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/log_cotacoes.rb",
+		"/home/vettori/Projetos/dcell_test/scratchy.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/tmp/pdf/82b53e07-4f79-464c-8887-5109e19e617b.pdf.txt",
+		"/home/vettori/Área de Trabalho/mapfre.html",
+		"/home/vettori/Projetos/RoboCotaSeguro/config/environments/development.rb",
+		"/home/vettori/Projetos/RoboCotaSeguro/Procfile",
+		"/home/vettori/Projetos/RoboCotaSeguro/app/models/nova_mapfre.rb",
+		"/home/vettori/Downloads/valor_mapfre.html"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.log",
+			".view",
+			"console.",
+			"div",
+			"restangular",
+			"before_filter",
+			"welcome",
+			"qcode98",
+			"condutor",
+			"cancelaTimeoutCotacao",
+			"cancelaTimeout",
+			"timeout",
+			"monta_retorno",
+			"conexao",
+			"Captura pagina de login",
+			"inicializ",
+			"18026",
+			"inicializa_variaveis",
+			"init_navigator",
+			"logar",
+			"logar_na_seguradora",
+			"inativar_login_ou_seguradora",
+			"logar",
+			"logar_na_seguradora",
+			"cotar",
+			"btnValidaFranquia",
+			"ctl00$ContentPlaceHolder1$ucDadosCalculo1$ucCoberturas1$btnValidaFranquia",
+			"cidade",
+			"remover_mascara",
+			"cpf",
+			"txtValorCobertura",
+			"ddlCobertura",
+			"txtValorCobertura",
+			"gas",
+			"console.log",
+			"defineTimeoutCotacao",
+			"time",
+			"setTimeout",
+			"pode",
+			"gnv",
+			"porto",
+			"pode",
+			"format",
+			"impressao",
+			"send",
+			"send_keys",
+			"@driver.script",
+			"flex",
+			"@driver.find_elements(:css, ",
+			"@driver.find_element(:id, \"",
+			"@driver.script",
+			"flex",
+			"@driver.script",
+			"@driver.find_element(:id, \"",
+			"agent.",
+			"refer",
+			"    ",
+			"ctrl",
+			",",
+			"pack",
+			"query_to_hash",
+			"imprimir",
+			"https://wwws.bradescoseguros.com.br/100Corretor/br/auto/propostas_venda/novacotacao_2.asp",
+			"@sale",
+			"baixar_dados_cotacao",
+			"cota",
+			"title",
+			"buscar_veiculo",
+			"InternalBranchID",
+			"Nokogiri",
+			"VERSAO",
+			"request_headers",
+			"agent",
+			"\n\nCaptura código da session",
+			"\n\nCaptura",
+			"\n\nCaptura código da session",
+			"rqCode",
+			"agent",
+			"preco",
+			"cotacao",
+			"usuario",
+			"porto",
+			"broker_id",
+			"SalesOpportunityID",
+			"send_keys",
+			"@driver.find_element(:id, ",
+			"@driver.script",
+			"script",
+			"EDITTIPOSEGURO",
+			"private",
+			"abrir_tela_de_busca",
+			"listalinks",
+			"frame",
+			"execute_script",
+			"impressao_mpafre",
+			"pdf",
+			"url",
+			"selenium_element",
+			"init_navigator",
+			"driver",
+			"init",
+			"init_navigator",
+			"recalcular",
+			"salvar_e",
+			"console.log",
+			"salvar_e_",
+			"atualizaSeguradora(",
+			"atualiza",
+			"salvar_e_ca",
+			"calcular_uma",
+			"salvar_e_calcular",
+			"submit",
+			"salvar_e_calcular",
+			"calcularTodos",
+			"propostas_calcu",
+			"calcular",
+			"calcular = ",
+			"calcular",
+			"console",
+			"sleep",
+			"render",
+			"propos",
+			"propostas",
+			"proposta",
+			"propostas",
+			"faye",
+			"impri",
+			"EDITNASCIMENTO"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"result.first",
+			"@result",
+			"TABLE_KEY_STYLE",
+			"\" => ",
+			"position",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								506,
+								506
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/application_controller.rb",
+					"settings":
+					{
+						"buffer_size": 465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/angular/controllers/forum-controller.js",
+					"settings":
+					{
+						"buffer_size": 1312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/angular/app.js.erb",
+					"settings":
+					{
+						"buffer_size": 2977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 100.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/initializers/jsroutes.rb",
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.git":
+	{
+		"height": 361.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"develop",
+				"config/environments/development.rb"
+			],
+			[
+				"application.js",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"app",
+				"app/assets/angular/app.js.erb"
+			],
+			[
+				"appic",
+				"app/views/layouts/application.view.erb"
+			],
+			[
+				"initia",
+				"config/initializers/jsroutes.rb"
+			],
+			[
+				"forum",
+				"app/controllers/services/forum_controller.rb"
+			],
+			[
+				"forumcontrol",
+				"app/controllers/forums_controller.rb"
+			],
+			[
+				"",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"applica",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"comment-",
+				"app/assets/angular/controllers/comment-controller.js"
+			],
+			[
+				"forum-co",
+				"app/assets/angular/controllers/forum-controller.js"
+			],
+			[
+				"mime",
+				"config/initializers/mime_types.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"gemfil",
+				"Gemfile"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"s",
+				"db/schema.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"applic",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"appl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"welcome",
+				"app/controllers/welcome_controller.rb"
+			],
+			[
+				"envir",
+				"config/environments/development.rb"
+			],
+			[
+				"devel",
+				"config/environments/development.rb"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"condutor",
+				"app/models/condutor.rb"
+			],
+			[
+				"for",
+				"app/workers/forwarder.rb"
+			],
+			[
+				"hdi",
+				"app/models/hdi.rb"
+			],
+			[
+				"worker",
+				"app/workers/cotar.rb"
+			],
+			[
+				"preco",
+				"app/models/preco.rb"
+			],
+			[
+				"fa",
+				"config/initializers/faye.rb"
+			],
+			[
+				"shema",
+				"db/schema.rb"
+			],
+			[
+				"re",
+				"app/admin/renovar_licencas.rb"
+			],
+			[
+				"pagamento",
+				"app/admin/pagamentos.rb"
+			],
+			[
+				"zurich",
+				"app/models/zurich.rb"
+			],
+			[
+				"faye",
+				"config/initializers/faye.rb"
+			],
+			[
+				"paga",
+				"app/models/pagamento.rb"
+			],
+			[
+				"porto",
+				"app/models/porto.rb"
+			],
+			[
+				"appli",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"zur",
+				"app/models/zurich.rb"
+			],
+			[
+				"renova",
+				"app/admin/renovar_licencas.rb"
+			],
+			[
+				"pag",
+				"app/models/pagamento.rb"
+			],
+			[
+				"tokio",
+				"app/models/tokiomarine.rb"
+			],
+			[
+				"navigator",
+				"app/modules/navigator.rb"
+			],
+			[
+				"impressa",
+				"app/models/impressao_bradesco.rb"
+			],
+			[
+				"proposta",
+				"app/controllers/propostas_controller.rb"
+			],
+			[
+				"z",
+				"public/zurich.html"
+			],
+			[
+				"lo",
+				"app/workers/logar.rb"
+			],
+			[
+				"workercotar",
+				"app/workers/cotar.rb"
+			],
+			[
+				"naviga",
+				"app/modules/navigator.rb"
+			],
+			[
+				"impresao",
+				"app/models/impressao_bradesco.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"zuric",
+				"app/models/zurich.rb"
+			],
+			[
+				"scha",
+				"db/schema.rb"
+			],
+			[
+				"allianz",
+				"app/models/allianz.rb"
+			],
+			[
+				"propostas",
+				"app/assets/javascripts/propostas.js.erb"
+			],
+			[
+				"impres",
+				"app/controllers/impressoes_controller.rb"
+			],
+			[
+				"impress",
+				"app/models/impressao_zurich.rb"
+			],
+			[
+				"veicu",
+				"app/models/veiculo.rb"
+			],
+			[
+				"bradesco",
+				"app/models/bradesco.rb"
+			],
+			[
+				"impresso",
+				"app/controllers/impressoes_controller.rb"
+			],
+			[
+				"pdf",
+				"app/pdfs/proposta_individual.rb"
+			],
+			[
+				"printhdi",
+				"lib/print_hdi.rb"
+			],
+			[
+				"impressaohdi",
+				"app/models/impressao_hdi.rb"
+			],
+			[
+				"databa",
+				"config/database.yml"
+			],
+			[
+				"modellogin",
+				"app/models/login_seguradora.rb"
+			],
+			[
+				"impresaomapfre",
+				"app/models/impressao_mapfre.rb"
+			],
+			[
+				"impressao",
+				"app/models/impressao_bradesco.rb"
+			],
+			[
+				"navigato",
+				"app/modules/navigator.rb"
+			],
+			[
+				"navi",
+				"app/modules/navigator.rb"
+			],
+			[
+				"libert",
+				"app/models/liberty.rb"
+			],
+			[
+				"brades",
+				"app/models/bradesco.rb"
+			],
+			[
+				"pre",
+				"app/models/preco.rb"
+			],
+			[
+				"liberty",
+				"app/models/liberty.rb"
+			],
+			[
+				"renovar",
+				"app/admin/renovar_licencas.rb"
+			],
+			[
+				"usuario",
+				"app/models/usuario.rb"
+			],
+			[
+				"liber",
+				"app/models/liberty.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"fac",
+				"spec/factories.rb"
+			],
+			[
+				"factor",
+				"spec/factories.rb"
+			],
+			[
+				"impressao_",
+				"app/models/impressao_mapfre.rb"
+			],
+			[
+				"li",
+				"app/models/liberty.rb"
+			],
+			[
+				"imp",
+				"app/models/impressao_hdi.rb"
+			],
+			[
+				"impre",
+				"app/models/impressao_mapfre.rb"
+			],
+			[
+				"zuri",
+				"lib/zurich_selenium.rb"
+			],
+			[
+				"navigat",
+				"app/modules/navigator.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"cadastr",
+				"app/assets/javascripts/cadastro.js"
+			],
+			[
+				"_",
+				"app/views/propostas/_resultados.erb"
+			],
+			[
+				"index",
+				"app/views/propostas/index.html.erb"
+			],
+			[
+				"propostacontroller",
+				"app/controllers/propostas_controller.rb"
+			],
+			[
+				"viewpropostain",
+				"app/views/propostas/index.html.erb"
+			],
+			[
+				"cotar",
+				"app/workers/cotar.rb"
+			],
+			[
+				"workers",
+				"app/workers/printer.rb"
+			],
+			[
+				"_faye",
+				"app/views/propostas/_faye.html.erb"
+			],
+			[
+				"admincota",
+				"app/admin/cotacoes.rb"
+			],
+			[
+				"propostasjs",
+				"app/assets/javascripts/propostas.js.erb"
+			],
+			[
+				"initialize",
+				"config/initializers/faye.rb"
+			],
+			[
+				"initiali",
+				"config/initializers/faye.rb"
+			],
+			[
+				"veiculo",
+				"app/models/veiculo.rb"
+			],
+			[
+				"proposta.js",
+				"app/assets/javascripts/propostas.js.erb"
+			],
+			[
+				"js.erb",
+				"app/views/propostas/busca_veiculo_por_placa_ou_chassi.js.erb"
+			],
+			[
+				"proposta.er",
+				"app/assets/javascripts/propostas.js.erb"
+			],
+			[
+				"port",
+				"app/models/porto.rb"
+			],
+			[
+				"application",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"cotacao",
+				"app/models/cotacao.rb"
+			],
+			[
+				"propotr",
+				"app/controllers/propostas_controller.rb"
+			],
+			[
+				"cobertu",
+				"app/models/cobertura.rb"
+			],
+			[
+				"cobertura",
+				"app/views/propostas/_cobertura.erb"
+			],
+			[
+				"vei",
+				"app/models/veiculo.rb"
+			],
+			[
+				"kit",
+				"db/migrate/20130828135442_add_valor_kit_gas_to_veiculo.rb"
+			],
+			[
+				"selenium",
+				"lib/mapfre_selenium.rb"
+			],
+			[
+				"faco",
+				"spec/factories.rb"
+			],
+			[
+				"abri",
+				"app/models/abrir_proposta_hdi.rb"
+			],
+			[
+				"propos",
+				"app/controllers/propostas_controller.rb"
+			],
+			[
+				"workcotar",
+				"app/workers/cotar.rb"
+			],
+			[
+				"str",
+				"db/structure.sql"
+			],
+			[
+				"bra",
+				"app/models/bradesco.rb"
+			],
+			[
+				"proposta_cont",
+				"app/controllers/propostas_controller.rb"
+			],
+			[
+				"hdi.",
+				"public/hdi.html"
+			],
+			[
+				"princi",
+				"app/controllers/principal_controller.rb"
+			],
+			[
+				"workerlogar",
+				"app/workers/logar.rb"
+			],
+			[
+				"precospec",
+				"test/preco_spec.rb"
+			],
+			[
+				"propostas.js",
+				"app/assets/javascripts/propostas.js.erb"
+			],
+			[
+				"allian",
+				"app/models/allianz.rb"
+			],
+			[
+				"prec",
+				"app/models/preco.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/vettori/Projetos/rv/calcule_o_frete/calcule_o_frete.sublime-project"
+			],
+			[
+				"robo",
+				"/home/vettori/Projetos/leosoft/RoboCotaSeguro/RoboCotaSeguro.sublime-project"
+			],
+			[
+				"insu",
+				"/home/vettori/Projetos/InsuranceValue/InsuranceValue.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true
+}

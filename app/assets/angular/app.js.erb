@@ -1,21 +1,119 @@
 'use strict';
-/*
-    This is our main launch point from Angular. We'll put anything to do with the
-    general well being of our app in this file. For now it'll basically just contain
-    the routing information.
 
-    Our module will be called 'app'.
+// vettori_script
+(function() {
+	if (!Routes) {
+		console.log("Routes addOn must be included after js-routes and before angular routeProvider definition");
+		return;
+	}
 
-    Note: We need the empty array after the 'app' declaration, without it, you
-    get an error complaining about 'No module <MODULE>'.
- */
-angular.module('app', ['ngResource', 'app.loading'])
-    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/',          {controller: 'ForumIndexController',    templateUrl: '<%= asset_path('templates/index.html') %>'})
-            .when('/forum/new', {controller: 'ForumCreateController',   templateUrl: '<%= asset_path('templates/new.html') %>'})
-            .when('/forum/:id', {controller: 'ForumShowController',     templateUrl: '<%= asset_path('templates/show.html') %>'})
-            .otherwise({redirectTo: '/'});
-}]);
+	var lastDrawVars = {}
+	/* Function for generate route draw form route path function */
+	Routes.draw = function(fnRoute) {
+		var param, found;
+		lastDrawVars = {}
+		param = [];
+		found = fnRoute.toString().match(/^function(?:.*)\((.*)\)(?:.*){/);
+		if (found) {
+			if (found.length >= 2) {
+				var arr = found[1].split(',');
+				for (var v in arr) {
+					var item = arr[v].toString().replace(/ /g, "").replace(/^_/, "");
+					if (item == 'options') {
+						continue;
+					}
+					param.push(':' + item);
+				}
+			}
+		}
+		for (var p in param) {
+			lastDrawVars[param[p]] = param[p].replace(':', '@');
+		}
+		return fnRoute.apply(null, param);
+	}
+
+	Routes.AngularModel = function(angularAppName, modelName, strRouteName, debugMode) {
+		strRouteName = strRouteName.replace('_path', '').replace('_draw', '');
+		if (debugMode) {
+			console.log('AngularModel -> ' + angularAppName + ', ' + modelName + ', ' + strRouteName);
+		};
+		angular.module(angularAppName).factory(modelName, function($resource) {
+			return $resource(Routes[strRouteName + '_draw'], Routes[strRouteName + '_vars']);
+		});
+	}
+
+	/* Generate all draws */
+	for (var r in Routes) {
+		if (r.indexOf('path') >= 0) {
+			var sdraw = r.replace('_path', '_draw');
+			var pdraw = r.replace('_path', '_vars');
+			var uri = Routes.draw(Routes[r]);
+			// console.log(uri)
+			Routes[sdraw] = (uri.substr(0,uri.indexOf('.')).trim() || "/");
+			Routes[pdraw] = lastDrawVars;
+		}
+	}
+})(); //end-vettori-script
 
 
+// Angular Application Name (ng-app)
+angular.module('app', ['ngResource','ngRoute', 'app.loading', 'restangular'])
+	.config(function(RestangularProvider) {
+		// RestangularProvider.setBaseUrl('http://localhost:3000');
+		RestangularProvider.setRequestSuffix('.json');
+	});
+
+
+// Angular Models 
+// Routes.AngularModel('app', 'Forum', 'forums_path', false);
+// Routes.AngularModel('app', 'Comment', 'forum_comment_path', false);
+
+// console.log(Routes);
+
+// Angular Routes
+// Routes.AngularRoute('app', 'ForumIndexController', 'root_draw', 'forums_path' );
+
+
+angular.module('app').config(['$locationProvider', '$routeProvider',
+	function($locationProvider, $routeProvider) {
+		// console.log(Routes.new_forum_draw);
+		// console.log(Routes.forums_path());
+		$locationProvider.html5Mode(true);
+		$routeProvider
+			// .when(Routes.root_draw, {
+			// 	controller: 'ForumIndexController',
+			// 	templateUrl: function(obj) {
+			// 		return Routes.forums_path(); // contem .view
+			// 	}
+			// })
+			.when('/:name*', {  
+				template: '<div id="dynamic-views"></div>',
+				controller: 'PagesController'
+			})
+			// .when(Routes.new_forum_draw, {
+			// 	controller: 'ForumCreateController',
+			// 	templateUrl: function(obj) {
+			// 		return Routes.new_forum_path();
+			// 	}
+			// })
+			// .when(Routes.forum_draw, {
+			// 	controller: 'ForumShowController',
+			// 	templateUrl: function(obj) {
+			// 		return Routes.forum_path(obj.id); // + '.view';
+			// 	}
+			// })
+			.otherwise({
+				redirectTo: Routes.root_path()
+			});
+	}
+]);
+
+// Dynamic Pages
+function PagesController($scope, $http, $route, $routeParams, $compile) {
+  $route.current.templateUrl = "/" + $routeParams.name + ".view";
+  $http.get($route.current.templateUrl).then(function (msg) {
+    // console.log(msg.data);
+    $('#dynamic-views').html($compile(msg.data)($scope));
+  });
+}
+PagesController.$inject = ['$scope', '$http', '$route', '$routeParams', '$compile'];

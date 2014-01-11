@@ -11,7 +11,12 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require underscore
 //= require angular.min.js
+//= require angular-route.min.js
 //= require angular-resource.min.js
+//= require restangular
+//= require js-routes
 //= require ../angular/app.js
 //= require_tree ../angular
+

@@ -1,13 +1,21 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  after_filter :set_csrf_cookie_for_ng
 
-  # We'll just use this as a launch point for our App
+  layout false
+
   def index
-    # Render just the layout since this application is Angular driven
-    # our layout/application has all the angular logic and our controllers
-    # have no views for themselves. We just need a place to launch from
-    # and this happens to be it. So we have no view (thus :nothing => true)
-    # but we still want the layout (since it has the App bootstrap code)
-    render :layout => 'application', :nothing => true
+    render :layout => 'application', :nothing => true, :formats => [:view]
   end
+
+  private
+
+  def set_csrf_cookie_for_ng
+    cookies['XSRF-TOKEN'] = form_authenticity_token if protect_against_forgery?
+  end
+
+  def verified_request?
+    super || form_authenticity_token == request.headers['HTTP_X_XSRF_TOKEN']
+  end
+
 end

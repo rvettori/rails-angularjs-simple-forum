@@ -2,44 +2,39 @@
 
 var app = angular.module('app');
 
-app.controller('ForumIndexController', ['$scope', 'Forum', function($scope, Forum) {
-    //Grab all forums from the server
-    $scope.items = Forum.query();
+angular.module('app').controller('ForumIndexController', ['$scope','Restangular' ,function($scope, Restangular) {
+    var Forum = Restangular.all('forums');
+    Forum.getList().then(function(data){   
+        console.log(data);
+        $scope.items = data;
+    });
 
-    //Destroy method for deleting a forum
-    $scope.destroy = function(index) {
-
-        //Tell the server to remove the object
-        Forum.remove({id: $scope.items[index].id}, function() {
-            //If successful, remove it from our collection
-            $scope.items.splice(index, 1);
+    $scope.destroy = function(item) {
+        item.remove().then(function(){
+            $scope.items.splice($scope.items.indexOf(item),1);
         });
     }
 }]);
 
-app.controller('ForumCreateController', ['$scope', '$location', 'Forum', function($scope, $location, Forum) {
+app.controller('ForumCreateController', ['$scope', '$location', '$routeParams', 'Restangular', function($scope, $location, $routeParams, Restangular) {
     //The save method which is called when the user wants to submit their data
+    console.log('route params >>>>>>>>>>>>>>>>')
+    console.log($routeParams.name)
+    var Forum = Restangular.all('forums')
     $scope.save = function() {
-
-        //Create the forum object to send to the back-end
-        var forum = new Forum($scope.forum);
-
-        //Save the forum object
-        forum.$save(function() {
-
-            //Redirect us back to the main page
-            $location.path('/');
-
-        }, function(response) {
-
-            //Post response objects to the view
-            $scope.errors = response.data.errors;
+        Forum.post($scope.forum).then(function(){
+            $location.path('/forums');
+        },function(resp){
+            $scope.errors = resp.data.errors;
         });
     }
 }]);
 
-//A controller to show the forum and all it's glory
-app.controller('ForumShowController', ['$scope', 'Forum', 'Comment', '$routeParams', function($scope, Forum, Comment, $routeParams) {
-    //Grab the forum from the server
-    $scope.forum = Forum.get({id: $routeParams.id})
-}]);
+// //A controller to show the forum and all it's glory
+// app.controller('ForumShowController', ['$scope', '$routeParams', 'Restangular', function($scope, $routeParams, Restangular) {
+//     // $scope.forum = Forum.get({id: $routeParams.id})
+//     Restangular.one('forums',$routeParams.id).get().then(function(forum){
+//         // $scope.forum = forum
+//         console.log(forum);
+//     });
+// }]);

@@ -1,3 +1,8 @@
 class ForumsController < InheritedResources::Base
-  respond_to :json
+  respond_to :view, :json
+
+  def hello
+    render :inline =>"hello", :layout=>'application'
+  end
 end
+
