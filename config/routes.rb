@@ -1,3 +1,9 @@
+class AngularFormatConstraints
+  def self.matches?(request)
+    ['json','view'].include?(request.format)
+  end
+end
+
 SimpleForum::Application.routes.draw do
   # resources :forums, :defaults => {format: :json} do
   # resources :comments, :defaults => {format: :json}
@@ -5,13 +11,14 @@ SimpleForum::Application.routes.draw do
 
   root to: 'application#index'
 
-  resources :forums, :constraints => lambda { |req| ['json','view'].include?(req.format) } do
-    resources :comments, :constraints => lambda { |req| ['json','view'].include?(req.format) }
+  # DEFINICAO DAS ROTAS DO ANGULARJS
+  constraints AngularFormatConstraints do
+    resources 'forums', controller: :forums, as: :forums do
+      resources :comments
+    end
   end
+  # CHAMADAS GET VIA URL
+  get '/:angular_route', to: 'application#index' , angular_route: /meus_forums.*/
 
-  get 'forums' => 'application#index'
-  get 'forums/*ng-view' => 'application#index'
-
-  get 'hello-forum' => 'forums#hello'
 
 end

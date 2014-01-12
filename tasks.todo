@@ -1,0 +1,18 @@
+Framework Angular Rails:
+  ☐ js-routes para definição das rotas;
+  ☐ Objeto $routeParams do angularjs deve conter os parâmetros nomeados da rota;
+  ☐ Rever  task rake js:routes;
+    ✔ Adicionar parametro para retornar o desenho da rota: draw; @done (14-01-12 10:18)
+    ✔ Adicionar base_uri para definir se a rota adicionada no / ou em path relativo; @done (14-01-12 10:18)
+    ✔ Adicionar rotas em um objeto Routes; @done (14-01-12 10:18)
+   ☐        
+
+Criação da gem:  
+    ☐ adicionar task rake js:routes;
+    ☐ javascript app.js com a definição das rotas dinamicas do angularjs;
+    ☐ Adicionar constraint para resource: json,view
+    ☐ Adicionar Mime::Type.register "text/html", :view no initializer;
+    ☐ Adicionar gem 'inherited_resources';
+    ☐ Adicionar gem 'underscore-rails'. Ver se Gem ou se javascript apenas;
+    ☐ Adicionar js angular: angular, angular-resourece, angular-route, restangular;
+    ☐ Ver possibilidade de criar uma task rake para toda configuração;

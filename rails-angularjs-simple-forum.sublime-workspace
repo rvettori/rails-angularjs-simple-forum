@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"root",
+				"ROOT_URL"
+			],
+			[
 				"foru",
 				"forums"
 			],
@@ -447,23 +451,7 @@
 			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 506,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 465,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/angular/controllers/forum-controller.js",
-			"settings":
-			{
-				"buffer_size": 1312,
+				"buffer_size": 556,
 				"line_ending": "Unix"
 			}
 		},
@@ -471,15 +459,7 @@
 			"file": "app/assets/angular/app.js.erb",
 			"settings":
 			{
-				"buffer_size": 2977,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/initializers/jsroutes.rb",
-			"settings":
-			{
-				"buffer_size": 81,
+				"buffer_size": 1425,
 				"line_ending": "Unix"
 			}
 		},
@@ -487,7 +467,55 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 446,
+				"buffer_size": 598,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/angular/controllers/forum-controller.js",
+			"settings":
+			{
+				"buffer_size": 1455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tasks.todo",
+			"settings":
+			{
+				"buffer_size": 980,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/angular/controllers/comment-controller.js",
+			"settings":
+			{
+				"buffer_size": 1114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/tasks/js.rake",
+			"settings":
+			{
+				"buffer_size": 2219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/rails_routes.js",
+			"settings":
+			{
+				"buffer_size": 5975,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 850,
 				"line_ending": "Unix"
 			}
 		}
@@ -495,9 +523,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 152.0,
+		"height": 52.0,
 		"selected_items":
 		[
+			[
+				"format",
+				"Format: Ruby"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"gemb",
 				"Gem Browser: List Gems"
@@ -509,14 +545,6 @@
 			[
 				"forma",
 				"Format: Javascript"
-			],
-			[
-				"reide",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"format",
-				"Format: Ruby"
 			],
 			[
 				"setsynta ruby",
@@ -828,14 +856,21 @@
 	},
 	"file_history":
 	[
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/forums_controller.rb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/app.js.erb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/initializers/jsroutes.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/application_controller.rb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/forum-controller.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/initializers/jsroutes.rb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/comment-controller.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/application.js",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.html.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/angular-resource.min.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/angular.min.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/show.view.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/new.view.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/index.view.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.view.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/partials/blank.html",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/forums_controller.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/app.js.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.html.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/environments/development.rb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/services/forum_controller.rb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/initializers/mime_types.rb",
@@ -948,14 +983,7 @@
 		"/home/vettori/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
 		"/home/vettori/Projetos/RoboCotaSeguro/app/modules/quotation_utils.rb",
 		"/home/vettori/Projetos/RoboCotaSeguro/app/workers/zurich_worker.rb",
-		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/log_cotacoes.rb",
-		"/home/vettori/Projetos/dcell_test/scratchy.rb",
-		"/home/vettori/Projetos/RoboCotaSeguro/tmp/pdf/82b53e07-4f79-464c-8887-5109e19e617b.pdf.txt",
-		"/home/vettori/Área de Trabalho/mapfre.html",
-		"/home/vettori/Projetos/RoboCotaSeguro/config/environments/development.rb",
-		"/home/vettori/Projetos/RoboCotaSeguro/Procfile",
-		"/home/vettori/Projetos/RoboCotaSeguro/app/models/nova_mapfre.rb",
-		"/home/vettori/Downloads/valor_mapfre.html"
+		"/home/vettori/Projetos/RoboCotaSeguro/app/admin/log_cotacoes.rb"
 	],
 	"find":
 	{
@@ -975,6 +1003,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"generate_routes_for_rails_3",
+			"name",
+			"msg",
+			"Routes",
 			"console.log",
 			".view",
 			"console.",
@@ -1098,11 +1130,7 @@
 			"render",
 			"propos",
 			"propostas",
-			"proposta",
-			"propostas",
-			"faye",
-			"impri",
-			"EDITNASCIMENTO"
+			"proposta"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1126,7 +1154,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1134,15 +1162,15 @@
 					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 506,
+						"buffer_size": 556,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								506,
-								506
+								347,
+								347
 							]
 						],
 						"settings":
@@ -1204,18 +1232,92 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/application_controller.rb",
+					"file": "app/assets/angular/app.js.erb",
 					"settings":
 					{
-						"buffer_size": 465,
+						"buffer_size": 1425,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								464,
-								464
+								683,
+								683
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
 							]
 						],
 						"settings":
@@ -1278,19 +1380,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/assets/angular/controllers/forum-controller.js",
 					"settings":
 					{
-						"buffer_size": 1312,
+						"buffer_size": 1455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								478,
-								478
+								196,
+								196
 							]
 						],
 						"settings":
@@ -1353,93 +1455,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/assets/angular/app.js.erb",
-					"settings":
-					{
-						"buffer_size": 2977,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								361,
-								361
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 100.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 4,
-					"file": "config/initializers/jsroutes.rb",
+					"file": "tasks.todo",
 					"settings":
 					{
-						"buffer_size": 81,
+						"buffer_size": 980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								76,
-								76
+								634,
+								634
 							]
 						],
 						"settings":
@@ -1491,7 +1519,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1501,18 +1529,93 @@
 				},
 				{
 					"buffer": 5,
-					"file": "config/routes.rb",
+					"file": "app/assets/angular/controllers/comment-controller.js",
 					"settings":
 					{
-						"buffer_size": 446,
+						"buffer_size": 1114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								354,
-								354
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/tasks/js.rake",
+					"settings":
+					{
+						"buffer_size": 2219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								656,
+								656
 							]
 						],
 						"settings":
@@ -1567,6 +1670,154 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/javascripts/rails_routes.js",
+					"settings":
+					{
+						"buffer_size": 5975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1063,
+								1063
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/assets/javascripts/application.js",
+					"settings":
+					{
+						"buffer_size": 850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1631,6 +1882,30 @@
 		"selected_items":
 		[
 			[
+				"applic",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"commetn",
+				"app/assets/angular/controllers/comment-controller.js"
+			],
+			[
+				"forum-",
+				"app/assets/angular/controllers/forum-controller.js"
+			],
+			[
+				"applicationjs",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"jsrou",
+				"config/initializers/jsroutes.rb"
+			],
+			[
 				"develop",
 				"config/environments/development.rb"
 			],
@@ -1661,10 +1936,6 @@
 			[
 				"",
 				"app/assets/javascripts/application.js"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"applica",
@@ -1705,10 +1976,6 @@
 			[
 				"user",
 				"app/models/user.rb"
-			],
-			[
-				"applic",
-				"app/assets/javascripts/application.js"
 			],
 			[
 				"appl",
@@ -2125,22 +2392,6 @@
 			[
 				"workerlogar",
 				"app/workers/logar.rb"
-			],
-			[
-				"precospec",
-				"test/preco_spec.rb"
-			],
-			[
-				"propostas.js",
-				"app/assets/javascripts/propostas.js.erb"
-			],
-			[
-				"allian",
-				"app/models/allianz.rb"
-			],
-			[
-				"prec",
-				"app/models/preco.rb"
 			]
 		],
 		"width": 0.0

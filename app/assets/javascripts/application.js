@@ -16,7 +16,8 @@
 //= require angular-route.min.js
 //= require angular-resource.min.js
 //= require restangular
-//= require js-routes
+// require js-routes
+//= require rails_routes.js
 //= require ../angular/app.js
 //= require_tree ../angular
 

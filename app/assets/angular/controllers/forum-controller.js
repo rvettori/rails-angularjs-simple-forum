@@ -19,7 +19,7 @@ angular.module('app').controller('ForumIndexController', ['$scope','Restangular'
 app.controller('ForumCreateController', ['$scope', '$location', '$routeParams', 'Restangular', function($scope, $location, $routeParams, Restangular) {
     //The save method which is called when the user wants to submit their data
     console.log('route params >>>>>>>>>>>>>>>>')
-    console.log($routeParams.name)
+    console.log($routeParams.uri)
     var Forum = Restangular.all('forums')
     $scope.save = function() {
         Forum.post($scope.forum).then(function(){

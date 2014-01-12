@@ -27,4 +27,4 @@ end
 
 gem 'jquery-rails'
 
-gem "js-routes"
+# gem "js-routes", git: 'git@github.com:railsware/js-routes.git'
