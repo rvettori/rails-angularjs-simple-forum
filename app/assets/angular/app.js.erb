@@ -26,12 +26,22 @@ angular.module('app').config(['$locationProvider', '$routeProvider',
 // Dynamic Pages
 function PagesController($scope, $http, $route, $routeParams, $compile) {
   // TODO: redirect when route not exist.
-  var BASE_URI = '/'; // ('/') PARA 
-  var ROOT_PATH = 'forums';
+  var ROOT_PATH = 'meus-forums';
   if (_.isUndefined($routeParams.uri)) {
   	$routeParams.uri = ROOT_PATH;
   }
-  $route.current.templateUrl = BASE_URI + $routeParams.uri + ".view";
+
+  //begin: match route params
+	var draws = []
+	for(var d in Routes) {
+	    if(d.toString().indexOf('draw')>=0) {
+	        draws.push(Routes[d.toString()]());
+	    }    
+	}
+	$routeParams = _.extend($routeParams, Utils.getUriParams($routeParams.uri, draws));
+  //end: match route params
+
+  $route.current.templateUrl = Routes.base_uri + $routeParams.uri + ".view";
 
 	$http({method: 'GET', url: $route.current.templateUrl}).
 	  success(function(response, status, headers, config) {

@@ -18,7 +18,7 @@
             <table class="table table-hover">
                 <!-- This will create a row for every item within our items object (both of these refer to the forums -->
                 <tr ng-repeat="item in items">
-                    <td width="100%"><a href="/forums/{{item.id}}">{{item.name}}</a></td>
+                    <td width="100%"><a data-ng-href="{{routes.forum_path([item.id])}}">{{item.name}}</a></td>
 
                     <!-- When the user clicks this button it will call the 'destory()' method within the controller -->
                     <td><a ng-click="destroy(item)" href=""><i class="icon-trash"></i></a></td>
@@ -29,7 +29,7 @@
 
         <div class="span3">
 
-            <a href="/forums/new" class="btn btn-primary btn-block btn-large">New</a>
+            <a data-ng-href="{{routes.new_forum_path()}}" class="btn btn-primary btn-block btn-large">New</a>
 
             <br />
 

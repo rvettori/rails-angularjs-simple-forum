@@ -6,7 +6,6 @@ app.controller('CommentsController', ['$scope', '$routeParams', 'Restangular',
         // URL: /forums/:forum_id/comments/:id
         console.log('params=====================');
         console.log($routeParams);
-        // var Comment = Restangular.one('forums', $routeParams.id).all('comments');
         var Comment = Restangular.one($routeParams.uri).all('comments');
         Comment.getList().then(function(data) {
             $scope.comments = data;

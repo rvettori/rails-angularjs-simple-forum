@@ -20,4 +20,5 @@
 //= require rails_routes.js
 //= require ../angular/app.js
 //= require_tree ../angular
+//= require_tree .
 

@@ -1,7 +1,18 @@
-desc "Generate a JavaScript file that contains your Rails routes"
+# desc "Javascript rails routes, ex: rake js:routes['filename:rails_routes.js, root_path:/meus-forums, base_uri:/']"
+desc "Javascript rails routes, ex: rake js:routes filename=rails_routes.js root_path=/meus-forums base_uri=/ "
 namespace :js do
-  task :routes, [:filename] => :environment do |t, args|
-    filename = args[:filename].blank? ? "rails_routes.js" : args[:filename]
+  # task :routes, [:filename] => :environment do |t, args|
+  task :routes, [] => :environment do |t, args|
+    filename   = ENV['filename']  || 'rails_routes.js'
+    @root_path = ENV['root_path'] || '/'
+    @base_uri  = ENV['base_uri']  || '/'
+    
+  # # task :routes, [:options] => :environment do |t, args|
+  #   opt = args[:options].split(/[\s,]/).compact.reject(&:empty?).inject({}){|mem,var| kv=var.split(':'); mem[kv.first.to_sym] = kv.last; mem }
+  #   filename  =  opt[:filename].blank?  ? "rails_routes.js" : opt[:filename]
+  #   @root_path = opt[:root_path].blank? ? "/" :               opt[:root_path]
+  #   @base_uri  = opt[:base_uri].blank?  ? "/" :               opt[:base_uri]
+
     if Rails.version >= "3.0.0"
       save_path = "#{Rails.root}/app/assets/javascripts/#{filename}"
       routes = generate_routes_for_rails_3
@@ -12,7 +23,7 @@ namespace :js do
 
     javascript = ""
     javascript = "var Routes = {};" + "\n"
-    javascript = "Routes.base_uri = '/';" + "\n"
+    javascript << "Routes.base_uri = '#{@base_uri}';" + "\n"
     routes.each do |route|
         javascript << generate_method(route[:name], route[:path]) + "\n"
     end
@@ -27,9 +38,17 @@ def generate_method(name, path)
   compare = /:(.*?)(\/|$)/
   path.sub!(compare, "' + params.#{$1} + '#{$2}") while path =~ compare
   
+  js_routes_for_root = '';
+  if name == 'root'
+    path = @root_path
+  else
+    js_routes_for_root = "Routes.#{name}      = function(options){ return Routes.#{name}_path(options).substr(1); }"
+  end
+
   js_func = %{
-  Routes['#{name}_path'] = function(options){
-    if (options==='draw') {return '#{draw}'}
+  #{js_routes_for_root}
+  Routes.#{name}_draw = function(){ return '#{draw}' }
+  Routes.#{name}_path = function(options){
     if(options && options.data) {
       var op_params = []
       for(var key in options.data){
@@ -40,11 +59,17 @@ def generate_method(name, path)
     }else if(options && options.params) {
       var params = options.params;
       return '#{path}'
+    }else if(_.isArray(options)){
+      var keys = _.compact(_.map(Routes.#{name}_draw().split('/'), function(item){ return (item.trim().indexOf(':')==0 ? item.trim().replace(':','') : '') }));
+      var params = _.reduce(keys,function(mem, key){ mem[key]=options.shift(); return mem; },{});
+      return '#{path}';
     }else {
       var params = options;
-      return '#{path}'
+      return '#{path}'    
     }
-  }}
+  }
+
+}
   return js_func
 end
 
