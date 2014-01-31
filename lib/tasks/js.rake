@@ -27,7 +27,17 @@ namespace :js do
     routes.each do |route|
         javascript << generate_method(route[:name], route[:path]) + "\n"
     end
-
+    javascript << %q{
+      Routes.getDraws = function(){
+        var draws = []
+        for(var d in Routes) {
+            if(d.toString().indexOf('draw')>=0) {
+                draws.push(Routes[d.toString()]());
+            }    
+        }
+        return draws;
+      }      
+    }
     File.open(save_path, "w") { |f| f.write(javascript) }
     puts "Routes saved to #{save_path}."
   end
