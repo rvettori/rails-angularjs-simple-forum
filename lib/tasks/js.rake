@@ -1,18 +1,12 @@
-# desc "Javascript rails routes, ex: rake js:routes['filename:rails_routes.js, root_path:/meus-forums, base_uri:/']"
+
 desc "Javascript rails routes, ex: rake js:routes filename=rails_routes.js root_path=/meus-forums base_uri=/ "
 namespace :js do
-  # task :routes, [:filename] => :environment do |t, args|
+
   task :routes, [] => :environment do |t, args|
     filename   = ENV['filename']  || 'rails_routes.js'
     @root_path = ENV['root_path'] || '/'
     @base_uri  = ENV['base_uri']  || '/'
     
-  # # task :routes, [:options] => :environment do |t, args|
-  #   opt = args[:options].split(/[\s,]/).compact.reject(&:empty?).inject({}){|mem,var| kv=var.split(':'); mem[kv.first.to_sym] = kv.last; mem }
-  #   filename  =  opt[:filename].blank?  ? "rails_routes.js" : opt[:filename]
-  #   @root_path = opt[:root_path].blank? ? "/" :               opt[:root_path]
-  #   @base_uri  = opt[:base_uri].blank?  ? "/" :               opt[:base_uri]
-
     if Rails.version >= "3.0.0"
       save_path = "#{Rails.root}/app/assets/javascripts/#{filename}"
       routes = generate_routes_for_rails_3
@@ -27,7 +21,17 @@ namespace :js do
     routes.each do |route|
         javascript << generate_method(route[:name], route[:path]) + "\n"
     end
-
+    javascript << %q{
+      Routes.getDraws = function(){
+        var draws = []
+        for(var d in Routes) {
+            if(d.toString().indexOf('draw')>=0) {
+                draws.push(Routes[d.toString()]());
+            }    
+        }
+        return draws;
+      }      
+    }
     File.open(save_path, "w") { |f| f.write(javascript) }
     puts "Routes saved to #{save_path}."
   end

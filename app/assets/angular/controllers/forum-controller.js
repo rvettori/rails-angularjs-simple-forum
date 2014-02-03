@@ -5,7 +5,7 @@ var app = angular.module('app');
 angular.module('app').controller('ForumIndexController', ['$scope','Restangular' ,function($scope, Restangular) {
     var Forum = Restangular.all(Routes.forums()); // forums
     Forum.getList().then(function(data){   
-        console.log(data);
+        // console.log(data);
         $scope.items = data;
     });
 
@@ -19,8 +19,8 @@ angular.module('app').controller('ForumIndexController', ['$scope','Restangular'
 
 app.controller('ForumCreateController', ['$scope', '$location', '$routeParams', 'Restangular', function($scope, $location, $routeParams, Restangular) {
     //The save method which is called when the user wants to submit their data
-    console.log('route params >>>>>>>>>>>>>>>>')
-    console.log($routeParams.uri)
+    // console.log('route params >>>>>>>>>>>>>>>>')
+    // console.log($routeParams.uri)
     var Forum = Restangular.all(Routes.forums())
     $scope.save = function() {
         Forum.post($scope.forum).then(function(){

@@ -1,4 +1,5 @@
 rails-angularjs-simple-forum
 ============================
 
-A simple demonstration between a Rails backend and AngularJS front end: creating a simple forum.
+Rais integrate with angularjs with dynamic routes and dynamic controllers.
+

@@ -1,8 +1,5 @@
-class ForumsController < InheritedResources::Base
+class ForumsController < ApplicationController # < InheritedResources::Base
   respond_to :view, :json
-
-  def hello
-    render :inline =>"hello", :layout=>'application'
-  end
+  inherit_resources
 end
 

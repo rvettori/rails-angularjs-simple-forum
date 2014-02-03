@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"angula",
+				"angularize_resources"
+			],
+			[
+				"cla",
+				"cla	class .. end"
+			],
+			[
 				"root",
 				"root_path"
 			],
@@ -460,86 +468,6 @@
 	"buffers":
 	[
 		{
-			"contents": "source 'https://rubygems.org'\n\nruby '1.9.3'\ngem 'rails', '3.2.13'\ngem 'thin'\ngem 'inherited_resources'\ngem 'bootstrap-sass'\n\n# Gems used only for assets and not required\n# in production environments by default.\ngroup :assets do\n  gem 'sass-rails',   '~> 3.2.3'\n  gem 'coffee-rails', '~> 3.2.1'\n  gem 'uglifier', '>= 1.0.3'\n  gem 'underscore-rails'\nend\n\ngroup :development do\n	gem 'quiet_assets'\n  gem 'sqlite3'\nend\n\ngroup :production do\n  gem 'sqlite3'\n  # gem 'pg'\nend\n\ngem 'jquery-rails'\n\n# gem \"js-routes\", git: 'git@github.com:railsware/js-routes.git'\n\ngem 'jasmine' # by pivotal\n	",
-			"file": "Gemfile",
-			"file_size": 584,
-			"file_write_time": 1389776683000000,
-			"settings":
-			{
-				"buffer_size": 585,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/angular/app.js.erb",
-			"settings":
-			{
-				"buffer_size": 1687,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/vettori/.config/sublime-text-2/Packages/User/nodejs.sublime-build",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix",
-				"name": "untitled.sublime-build"
-			}
-		},
-		{
-			"file": "app/assets/angular/controllers/forum-controller.js",
-			"settings":
-			{
-				"buffer_size": 1516,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "class AngularFormatConstraints\n  def self.matches?(request)\n    ['json','view'].include?(request.format)\n  end\nend\n\nSimpleForum::Application.routes.draw do\n  mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)\n\n  # resources :forums, :defaults => {format: :json} do\n  # resources :comments, :defaults => {format: :json}\n  # end\n\n  root to: 'application#index'\n\n  # DEFINICAO DAS ROTAS DO ANGULARJS\n  constraints AngularFormatConstraints do\n    resources 'meus-forums', controller: :forums, as: :forums do\n      resources :comments\n    end\n  end\n  # CHAMADAS GET VIA URL\n  get '/:angular_route', to: 'application#index' , angular_route: /meus-forums.*/\n\n\nend\n",
-			"file": "config/routes.rb",
-			"file_size": 671,
-			"file_write_time": 1389978017000000,
-			"settings":
-			{
-				"buffer_size": 671,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tasks.todo",
-			"settings":
-			{
-				"buffer_size": 980,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/angular/controllers/comment-controller.js",
-			"settings":
-			{
-				"buffer_size": 1029,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/tasks/js.rake",
-			"settings":
-			{
-				"buffer_size": 3506,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/vettori/.config/sublime-text-2/Packages/User/Nodejs.sublime-build",
-			"settings":
-			{
-				"buffer_size": 213,
-				"line_ending": "Unix",
-				"name": "untitled.sublime-build"
-			}
-		},
-		{
 			"file": "app/assets/javascripts/application.js",
 			"settings":
 			{
@@ -548,37 +476,34 @@
 			}
 		},
 		{
-			"file": "app/assets/javascripts/Utils.js",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 1948,
+				"buffer_size": 1162,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/javascripts/jasmine_specs/Utils_Spec.js",
+			"file": "lib/tasks/js.rake",
 			"settings":
 			{
-				"buffer_size": 327,
+				"buffer_size": 3171,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/javascripts/support/jasmine.yml",
+			"file": "app/controllers/forums_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1956,
+				"buffer_size": 127,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "describe(\"Player\", function() {\n  var player;\n  var song;\n\n  beforeEach(function() {\n    player = new Player();\n    song = new Song();\n  });\n\n  // it(\"'/forums/:forum_id/comments/:id'; be able to play a Song\", function() {\n  //   player.play(song);\n  //   expect(player.currentlyPlayingSong).toEqual(song);\n\n  //   //demonstrates use of custom matcher\n  //   expect(player).toBePlaying(song);\n  // });\n\n  describe(\"when song has been paused\", function() {\n    beforeEach(function() {\n      player.play(song);\n      player.pause();\n    });\n\n    it(\"should indicate that the song is currently paused\", function() {\n      expect(player.isPlaying).toBeFalsy();\n\n      // demonstrates use of 'not' with a custom matcher\n      expect(player).not.toBePlaying(song);\n    });\n\n    it(\"should be possible to resume\", function() {\n      player.resume();\n      expect(player.isPlaying).toBeTruthy();\n      expect(player.currentlyPlayingSong).toEqual(song);\n    });\n  });\n\n  // demonstrates use of spies to intercept and test method calls\n  it(\"tells the current song if the user has made it a favorite\", function() {\n    spyOn(song, 'persistFavoriteStatus');\n\n    player.play(song);\n    player.makeFavorite();\n\n    expect(song.persistFavoriteStatus).toHaveBeenCalledWith(true);\n  });\n\n  //demonstrates use of expected exceptions\n  describe(\"#resume\", function() {\n    it(\"should throw an exception if song is already playing\", function() {\n      player.play(song);\n\n      expect(function() {\n        player.resume();\n      }).toThrowError(\"song is already playing\");\n    });\n  });\n});\n",
-			"file": "spec/javascripts/jasmine_examples/Player_Spec.js",
-			"file_size": 1546,
-			"file_write_time": 1389776194000000,
+			"file": "app/assets/angular/controllers/forum-controller.js",
 			"settings":
 			{
-				"buffer_size": 1573,
+				"buffer_size": 1525,
 				"line_ending": "Unix"
 			}
 		},
@@ -589,30 +514,30 @@
 				"buffer_size": 1754,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "app/assets/javascripts/rails_routes.js",
-			"settings":
-			{
-				"buffer_size": 10745,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 465,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "Packages/User/Nodejs.sublime-build",
 	"command_palette":
 	{
-		"height": 52.0,
+		"height": 172.0,
 		"selected_items":
 		[
+			[
+				"gemb",
+				"Gem Browser: List Gems"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
 			[
 				"setsy jasm",
 				"Set Syntax: Jasmine"
@@ -624,10 +549,6 @@
 			[
 				"setsy jas",
 				"Set Syntax: Jasmine"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"remove",
@@ -650,15 +571,7 @@
 				"Indentation: Reindent Lines"
 			],
 			[
-				"gemb",
-				"Gem Browser: List Gems"
-			],
-			[
 				"FORMA",
-				"Format: Javascript"
-			],
-			[
-				"forma",
 				"Format: Javascript"
 			],
 			[
@@ -946,7 +859,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 521.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -963,9 +876,27 @@
 	},
 	"file_history":
 	[
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/app.js.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/forums_controller.rb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/comment-controller.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/services/models.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/index.view.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/rails_routes.js",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/jasmine_specs/Utils.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.view.erb",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/forum-controller.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/application_controller.rb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/Utils.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/spec/javascripts/jasmine_examples/Player_Spec.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/spec/javascripts/support/jasmine.yml",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/spec/javascripts/jasmine_specs/Utils_Spec.js",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/application.js",
+		"/home/vettori/.config/sublime-text-2/Packages/User/Nodejs.sublime-build",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/lib/tasks/js.rake",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/tasks.todo",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/routes.rb",
+		"/home/vettori/.config/sublime-text-2/Packages/User/nodejs.sublime-build",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/Gemfile",
+		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/jasmine_specs/Utils.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/spec/javascripts/Utils_Spec.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/services/Utils.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/spec/javascripts/jasmine_examples/Utils_Spec.js",
@@ -978,20 +909,12 @@
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/spec/javascripts/utils_spec.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/jasmine_examples/Player.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/testes.js",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/application_controller.rb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/forum-controller.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/initializers/jsroutes.rb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/controllers/comment-controller.js",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/application.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/angular-resource.min.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/javascripts/angular.min.js",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/show.view.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/new.view.erb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/forums/index.view.erb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.view.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/partials/blank.html",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/forums_controller.rb",
-		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/assets/angular/app.js.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/views/layouts/application.html.erb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/config/environments/development.rb",
 		"/home/vettori/Projetos/rv/rails-angularjs-simple-forum/app/controllers/services/forum_controller.rb",
@@ -1080,17 +1003,7 @@
 		"/home/vettori/Projetos/RoboCotaSeguro/spec/veiculo_spec.rb",
 		"/home/vettori/Projetos/RoboCotaSeguro/app/views/propostas/_condutor_secundario.erb",
 		"/home/vettori/Projetos/RoboCotaSeguro/db/migrate/20130828135442_add_valor_kit_gas_to_veiculo.rb",
-		"/home/vettori/Projetos/RoboCotaSeguro/log/Libertyleonir@leosoft.com.br.log",
-		"/home/vettori/.config/sublime-text-2/Packages/GitGutter/GitGutter.sublime-settings",
-		"/home/vettori/.config/sublime-text-2/Packages/User/GitGutter.sublime-settings",
-		"/home/vettori/Projetos/RoboCotaSeguro/.ruby-version",
-		"/home/vettori/Projetos/RoboCotaSeguro/.sublime-project",
-		"/home/vettori/Projetos/RoboCotaSeguro/RoboCotaSeguro.sublime-project",
-		"/home/vettori/Projetos/RoboCotaSeguro/banco.sql.bkp",
-		"/home/vettori/Projetos/RoboCotaSeguro/garagem_domicilio.html",
-		"/home/vettori/Projetos/RoboCotaSeguro/garagem_domicilio.html~",
-		"/home/vettori/Projetos/RoboCotaSeguro/hdi.html",
-		"/home/vettori/Projetos/RoboCotaSeguro/veiculo.png"
+		"/home/vettori/Projetos/RoboCotaSeguro/log/Libertyleonir@leosoft.com.br.log"
 	],
 	"find":
 	{
@@ -1110,6 +1023,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console.log",
+			"ROOT_PATH",
+			"generate_routes_for_rails_3",
+			"generate_routes_for_rails_2",
+			"generate_method",
+			"console.log",
+			"formus_draw",
 			"base_uri",
 			"environment",
 			"root_path",
@@ -1230,14 +1150,7 @@
 			"salvar_e_",
 			"atualizaSeguradora(",
 			"atualiza",
-			"salvar_e_ca",
-			"calcular_uma",
-			"salvar_e_calcular",
-			"submit",
-			"salvar_e_calcular",
-			"calcularTodos",
-			"propostas_calcu",
-			"calcular"
+			"salvar_e_ca"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1261,679 +1174,11 @@
 	"groups":
 	[
 		{
-			"selected": 16,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 585,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								585,
-								585
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/assets/angular/app.js.erb",
-					"settings":
-					{
-						"buffer_size": 1687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								980,
-								980
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/vettori/.config/sublime-text-2/Packages/User/nodejs.sublime-build",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/assets/angular/controllers/forum-controller.js",
-					"settings":
-					{
-						"buffer_size": 1516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								221,
-								221
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 671,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								468,
-								468
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "tasks.todo",
-					"settings":
-					{
-						"buffer_size": 980,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								74,
-								74
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/assets/angular/controllers/comment-controller.js",
-					"settings":
-					{
-						"buffer_size": 1029,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								723,
-								723
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "lib/tasks/js.rake",
-					"settings":
-					{
-						"buffer_size": 3506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3502,
-								3502
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 806.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/home/vettori/.config/sublime-text-2/Packages/User/Nodejs.sublime-build",
-					"settings":
-					{
-						"buffer_size": 213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29,
-								29
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
 					"file": "app/assets/javascripts/application.js",
 					"settings":
 					{
@@ -1944,8 +1189,8 @@
 						"selection":
 						[
 							[
-								869,
-								869
+								366,
+								366
 							]
 						],
 						"settings":
@@ -2000,471 +1245,25 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/assets/javascripts/Utils.js",
-					"settings":
-					{
-						"buffer_size": 1948,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1783,
-								1783
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "spec/javascripts/jasmine_specs/Utils_Spec.js",
-					"settings":
-					{
-						"buffer_size": 327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								179,
-								179
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Jasmine/Syntaxes/Jasmine.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "spec/javascripts/support/jasmine.yml",
+					"buffer": 1,
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 1956,
+						"buffer_size": 1162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1316,
-								1317
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 990.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "spec/javascripts/jasmine_examples/Player_Spec.js",
-					"settings":
-					{
-						"buffer_size": 1573,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								187,
-								187
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/views/forums/index.view.erb",
-					"settings":
-					{
-						"buffer_size": 1754,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1132,
-								1132
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "app/assets/javascripts/rails_routes.js",
-					"settings":
-					{
-						"buffer_size": 10745,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								71
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "app/controllers/application_controller.rb",
-					"settings":
-					{
-						"buffer_size": 465,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								413,
-								390
+								437,
+								437
 							]
 						],
 						"settings":
@@ -2518,6 +1317,304 @@
 							"synced": false,
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/tasks/js.rake",
+					"settings":
+					{
+						"buffer_size": 3171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2438,
+								2438
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 866.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/forums_controller.rb",
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/angular/controllers/forum-controller.js",
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								526,
+								526
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/forums/index.view.erb",
+					"settings":
+					{
+						"buffer_size": 1754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -2582,6 +1679,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"railsrou",
+				"app/assets/javascripts/rails_routes.js"
+			],
+			[
+				"js.r",
+				"lib/tasks/js.rake"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"rails",
+				"app/assets/javascripts/rails_routes.js"
+			],
 			[
 				"application",
 				"app/controllers/application_controller.rb"
@@ -2685,10 +1798,6 @@
 			[
 				"appl",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			],
 			[
 				"welcome",
@@ -3081,18 +2190,6 @@
 			[
 				"proposta_cont",
 				"app/controllers/propostas_controller.rb"
-			],
-			[
-				"hdi.",
-				"public/hdi.html"
-			],
-			[
-				"princi",
-				"app/controllers/principal_controller.rb"
-			],
-			[
-				"workerlogar",
-				"app/workers/logar.rb"
 			]
 		],
 		"width": 0.0
