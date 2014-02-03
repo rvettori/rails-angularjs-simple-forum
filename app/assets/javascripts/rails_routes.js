@@ -10,17 +10,17 @@ Routes.base_uri = '/';
         op_params.push([key, options.data[key]].join('='));
       }
       var params = options.params;
-      return '/?' + op_params.join('&');
+      return 'meus-forums?' + op_params.join('&');
     }else if(options && options.params) {
       var params = options.params;
-      return '/'
+      return 'meus-forums'
     }else if(_.isArray(options)){
       var keys = _.compact(_.map(Routes.root_draw().split('/'), function(item){ return (item.trim().indexOf(':')==0 ? item.trim().replace(':','') : '') }));
       var params = _.reduce(keys,function(mem, key){ mem[key]=options.shift(); return mem; },{});
-      return '/';
+      return 'meus-forums';
     }else {
       var params = options;
-      return '/'    
+      return 'meus-forums'    
     }
   }
 
@@ -250,3 +250,14 @@ Routes.base_uri = '/';
   }
 
 
+
+      Routes.getDraws = function(){
+        var draws = []
+        for(var d in Routes) {
+            if(d.toString().indexOf('draw')>=0) {
+                draws.push(Routes[d.toString()]());
+            }    
+        }
+        return draws;
+      }      
+    

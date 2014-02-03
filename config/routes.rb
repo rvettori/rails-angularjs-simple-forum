@@ -4,6 +4,18 @@ class AngularFormatConstraints
   end
 end
 
+module ActionDispatch::Routing  
+  class Mapper
+    def angular_resources(*args, &block)
+      constraints AngularFormatConstraints do
+        resources *args, &block    
+      end
+      get '/:angular_route', to: 'application#index' , angular_route: /#{args.first.to_s}.*/  
+    end
+  end
+end
+
+
 SimpleForum::Application.routes.draw do
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
 
@@ -13,14 +25,20 @@ SimpleForum::Application.routes.draw do
 
   root to: 'application#index'
 
-  # DEFINICAO DAS ROTAS DO ANGULARJS
-  constraints AngularFormatConstraints do
-    resources 'meus-forums', controller: :forums, as: :forums do
+  # angularize_resources 'meus-forums', :as => :forums
+
+  # DEFINICAO DAS ROTAS DO ANGULARJS - sem angularize
+  # constraints AngularFormatConstraints do
+  #   resources 'meus-forums', controller: :forums, as: :forums do
+  #     resources :comments
+  #   end
+  # end
+  # # CHAMADAS GET VIA URL
+  # get '/:angular_route', to: 'application#index' , angular_route: /meus-forums.*/
+
+    angular_resources 'meus-forums', controller: :forums, as: :forums do
       resources :comments
     end
-  end
-  # CHAMADAS GET VIA URL
-  get '/:angular_route', to: 'application#index' , angular_route: /meus-forums.*/
 
 
 end

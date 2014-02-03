@@ -25,21 +25,14 @@ angular.module('app').config(['$locationProvider', '$routeProvider',
 
 // Dynamic Pages
 function PagesController($scope, $http, $route, $routeParams, $compile) {
-  // TODO: redirect when route not exist.
-  var ROOT_PATH = 'meus-forums';
+
   if (_.isUndefined($routeParams.uri)) {
-  	$routeParams.uri = ROOT_PATH;
+  	$routeParams.uri = Routes.root_path();
   }
 
-  //begin: match route params
-	var draws = []
-	for(var d in Routes) {
-	    if(d.toString().indexOf('draw')>=0) {
-	        draws.push(Routes[d.toString()]());
-	    }    
-	}
-	$routeParams = _.extend($routeParams, Utils.getUriParams($routeParams.uri, draws));
-  //end: match route params
+	$routeParams = _.extend($routeParams, Utils.getUriParams($routeParams.uri, Routes.getDraws()));
+
+	console.log($routeParams);
 
   $route.current.templateUrl = Routes.base_uri + $routeParams.uri + ".view";
 
